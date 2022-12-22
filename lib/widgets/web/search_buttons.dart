@@ -26,7 +26,6 @@ class SearchButtons extends StatelessWidget {
             SizedBox(
               width: 10,
             ),
-            TranslationButtons(),
           ],
         ),
       ],

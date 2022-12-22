@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_flutter/colors.dart';
+import 'package:google_flutter/widgets/translation_buttons.dart';
 
 import '../widgets/search.dart';
 import '../widgets/web/search_buttons.dart';
+import '../widgets/web/web_footer.dart';
 
 class WebScreenLayout extends StatelessWidget {
   const WebScreenLayout({super.key});
@@ -67,14 +69,19 @@ class WebScreenLayout extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
-                  children: [
-                    const Search(),
-                    const SizedBox(
+                  children: const [
+                    Search(),
+                    SizedBox(
                       height: 20,
                     ),
                     SearchButtons(),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    TranslationButtons(),
                   ],
                 ),
+                const WebFooter(),
               ],
             ),
           ),
