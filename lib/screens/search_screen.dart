@@ -27,6 +27,7 @@ class SearchScreen extends StatelessWidget {
       title: searchQuery,
       child: Scaffold(
         body: SingleChildScrollView(
+          // scrollDirection: Axis.vertical,
           child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,

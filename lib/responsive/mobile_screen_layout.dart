@@ -4,9 +4,9 @@ import 'package:flutter_svg/svg.dart';
 import '../colors.dart';
 import '../widgets/mobile/mobile_footer.dart';
 import '../widgets/search.dart';
-import '../widgets/translation_buttons.dart';
-import '../widgets/web/search_buttons.dart';
-import '../widgets/web/web_footer.dart';
+// import '../widgets/translation_buttons.dart';
+// import '../widgets/web/search_buttons.dart';
+// import '../widgets/web/web_footer.dart';
 
 class MobileScreenLayout extends StatelessWidget {
   const MobileScreenLayout({super.key});
@@ -28,6 +28,7 @@ class MobileScreenLayout extends StatelessWidget {
           child: const DefaultTabController(
               length: 2,
               child: TabBar(
+               
                   labelColor: blueColor,
                   unselectedLabelColor: Colors.grey,
                   indicatorColor: blueColor,
@@ -38,7 +39,8 @@ class MobileScreenLayout extends StatelessWidget {
                     Tab(
                       text: 'IMAGES',
                     ),
-                  ])),
+                  ]),
+                  ),
         ),
         backgroundColor: backgroundColor,
         elevation: 0,

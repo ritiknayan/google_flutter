@@ -17,7 +17,7 @@ class Search extends StatelessWidget {
         Center(
           child: Image.asset(
             'assets/images/google-logo.png',
-            height: size.height * 0.12,
+            height: size.height * 0.11,
           ),
         ),
         const SizedBox(
